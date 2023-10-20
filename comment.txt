@@ -1,0 +1,2 @@
+<!-- <% recipe.ingredients.toppings.quantity ? %> 
+            <span> <%=recipe.ingredients.toppings.quantity%> of</span> : <% null %> -->
