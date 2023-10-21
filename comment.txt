@@ -1,2 +1,18 @@
 <!-- <% recipe.ingredients.toppings.quantity ? %> 
             <span> <%=recipe.ingredients.toppings.quantity%> of</span> : <% null %> -->
+
+         <ul id="ingredientsList">
+        <% <li> 
+          `${recipe.protein.name}, ${recipe.protein.preparation}`  
+          </li> %>
+        <li><%= recipe.ingredients.salsa.name %></li>
+        <% recipe.ingredients.toppings.map(topping =>{ %> 
+          <% recipe.ingredients.toppings.forEach(topping => { %>
+            <li> 
+              <% `${topping.quantity} of ${topping.name}` %>
+            </li>
+          <% }) %> 
+            
+        <% }) %>
+      
+      </ul>
